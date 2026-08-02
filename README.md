@@ -8,10 +8,12 @@ A command-line expense tracker built with Python and SQLite, supporting multiple
 - View total expenses
 - View expenses grouped by category
 - Multi-user support — each user's data is kept separate using SQLite queries filtered by username
+- Visualize spending by category with a pie chart (Matplotlib)
 
 ## Tech Stack
 - Python
 - SQLite3 (via Python's built-in `sqlite3` module)
+- Matplotlib
 
 ## How to Run
 ```bash

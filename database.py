@@ -68,6 +68,7 @@ def expense_by_category(username):
         print("Spend by category:")
         for category, total in rows:
             print(f"  {category}: {total}")
+    return rows
 
 def show_table(username):
     conn= create_connection()

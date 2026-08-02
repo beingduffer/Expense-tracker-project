@@ -1,3 +1,4 @@
+from visualize import show_spending_chart
 from database import create_table, add_expense, total_expense, expense_by_category, show_table
 
 def menu():
@@ -9,8 +10,9 @@ def menu():
         print("1. Add Expense")
         print("2. View All Expenses")
         print("3. Total Expenses")
-        print("4. Spend by Category")
-        print("5. Exit")
+        print("4. Expense by Category")
+        print("5. Show expense chart")
+        print("6. Exit")
 
         choice = input("Choose an option: ")
 
@@ -23,6 +25,8 @@ def menu():
         elif choice == "4":
             expense_by_category(username)
         elif choice == "5":
+            show_spending_chart(username)        
+        elif choice == "6":
             print("Goodbye!")
             break
         else:
